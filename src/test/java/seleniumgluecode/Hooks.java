@@ -23,8 +23,8 @@ public class Hooks {
 
     private static WebDriver webDriver;
 
-    public static final String AUTOMATE_USERNAME = "BROWSERSTACK_USERNAME";
-    public static final String AUTOMATE_ACCESS_KEY = "BROWSERSTACK_ACCESS_KEY";
+    public static final String AUTOMATE_USERNAME = "israel_aj7zMH";
+    public static final String AUTOMATE_ACCESS_KEY = "WumFXg3pzzEbwmWnNxEf";
     public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY
             + "@hub-cloud.browserstack.com/wd/hub";
 
