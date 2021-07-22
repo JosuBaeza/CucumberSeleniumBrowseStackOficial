@@ -24,7 +24,7 @@ public class Testrunner {
     @AfterClass
     public static void finished(){
 
-        /*
+        
         try{
             System.out.println("Generarndo Reporte");
             String[] cmd = {"cmd.exe", "/c", "npm run report"};
@@ -34,7 +34,7 @@ public class Testrunner {
         }catch(Exception ex){
 
         }
-        */
+
     }
 
 }
