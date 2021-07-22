@@ -12,19 +12,20 @@ import static cucumber.api.SnippetType.CAMELCASE;
 @CucumberOptions(
     features = "src/test/java/features",
     glue= ("seleniumgluecode"),
-    plugin = {"json:test/report/cucumber_report.json"},
-    snippets= CAMELCASE
+    //plugin = {"json:test/report/cucumber_report.json"},
+        plugin = {"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:resources/cucumber-reports/report.html"},
+        snippets= CAMELCASE
 )
 
 
 //solo una vez
 
 public class Testrunner {
-
+/*
     @AfterClass
     public static void finished(){
 
-        
+
         try{
             System.out.println("Generarndo Reporte");
             String[] cmd = {"cmd.exe", "/c", "npm run report"};
@@ -36,5 +37,5 @@ public class Testrunner {
         }
 
     }
-
+*/
 }
