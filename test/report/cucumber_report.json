@@ -1,0 +1,987 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6263580000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Ingresar a la categoria Smartphone desde la pantalla Home",
+        "description": "",
+        "id": "categoria-carrito-de-compra-pagina-magento;ingresar-a-la-categoria-smartphone-desde-la-pantalla-home",
+        "after": [
+          {
+            "result": {
+              "duration": 642961500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 389004100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "El usuario se encuentra en la pagina Home de la tienda",
+            "match": {
+              "location": "Testti.el_usuario_se_encuentra_en_la_pagina_Home_de_la_tienda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 917961300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "hace click sobre el boton Mobile",
+            "match": {
+              "location": "Testti.hace_click_sobre_el_boton_Mobile()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117297400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Se debe redirigir a la pantalla mobile",
+            "match": {
+              "location": "Testti.se_debe_redirigir_a_la_pantalla_de_comics()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3442357400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Agregar 2 Smartphone al carrito de compra",
+        "description": "",
+        "id": "categoria-carrito-de-compra-pagina-magento;agregar-2-smartphone-al-carrito-de-compra;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 634875600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 913541200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "El usuario se encuentra en la pagina de Smartphones",
+            "match": {
+              "location": "Testti.elUsuarioSeEncuentraEnLaPaginaDeSmartphones()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1366845300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "hace click sobre el boton Add To Cart en el celular Sony",
+            "match": {
+              "location": "Testti.haceClickSobreElBotonAddToCartEnElCelularSony()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 705769300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "hace click sobre el boton Mobile",
+            "match": {
+              "location": "Testti.hace_click_sobre_el_boton_Mobile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3323225600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Hace click sobre el boton Add To Cart en el celular Iphone",
+            "match": {
+              "location": "Testti.haceClickSobreElBotonAddToCartEnElCelularIphone()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 666043500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "hace click sobre el boton Mobile",
+            "match": {
+              "location": "Testti.hace_click_sobre_el_boton_Mobile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1075836100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Hace click sobre el boton Add To Cart en el celular Samsung",
+            "match": {
+              "location": "Testti.haceClickSobreElBotonAddToCartEnElCelularSamsung()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72316200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Se deben agregar los 3 smartphones al carrito de manera correcta",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 21
+                }
+              ],
+              "location": "Testti.seDebenAgregarLosSmartphonesAlCarritoDeManeraCorrecta(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 75284700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "El Carrito no debe estar Vacio",
+            "match": {
+              "location": "Testti.elCarritoNoDebeEstarVacio()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1082300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "El total a pagar debe ser de $730.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "730",
+                  "offset": 30
+                },
+                {
+                  "val": "00",
+                  "offset": 34
+                }
+              ],
+              "location": "Testti.elTotalAPagarDebeSerDe$(int,int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "El subtotal a pagar debe ser de $730.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "730",
+                  "offset": 33
+                },
+                {
+                  "val": "00",
+                  "offset": 37
+                }
+              ],
+              "location": "Testti.elSubtotalAPagarDebeSerDe$(int,int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Categoria Carrito de Compra Pagina Magento",
+    "description": "como usuario quiero realizar compras en la pagina Magento y validar los productos que estan en el carrito de compra",
+    "id": "categoria-carrito-de-compra-pagina-magento",
+    "keyword": "Feature",
+    "uri": "cart.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3454239800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validar mensaje de bienvenida",
+        "description": "",
+        "id": "categoria-pagina-magento;validar-mensaje-de-bienvenida;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 968424300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "el usuario esta en MyAccount",
+            "match": {
+              "location": "Testti.elUsuarioEstaEnMyAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "busca informacion de su perfil",
+            "match": {
+              "location": "Testti.buscaInformacionDeSuPerfil()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "el mensaje de bienvenida debe ser \"Hello, josue baeza baeza!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hello, josue baeza baeza!",
+                  "offset": 35
+                }
+              ],
+              "location": "Testti.elMensajeDeBienvenidaDebeSer(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3876433800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Validar titulo contact information",
+        "description": "",
+        "id": "categoria-pagina-magento;validar-titulo-contact-information;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 609711600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 29800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "el usuario esta en MyAccount",
+            "match": {
+              "location": "Testti.elUsuarioEstaEnMyAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "busca informacion de su perfil",
+            "match": {
+              "location": "Testti.buscaInformacionDeSuPerfil()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "el titulo de contact debe ser \"Contact Information\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3464487200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Validar titulo NEWSLETTERS",
+        "description": "",
+        "id": "categoria-pagina-magento;validar-titulo-newsletters;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 636083000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "el usuario esta en MyAccount",
+            "match": {
+              "location": "Testti.elUsuarioEstaEnMyAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "busca informacion de su perfil",
+            "match": {
+              "location": "Testti.buscaInformacionDeSuPerfil()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "el titulo de NEWSLETTERS debe ser \"NEWSLETTERS\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3569467100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Validar titulo DEFAULT BILLING ADDRESS",
+        "description": "",
+        "id": "categoria-pagina-magento;validar-titulo-default-billing-address;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 594867400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 51800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "el usuario esta en MyAccount",
+            "match": {
+              "location": "Testti.elUsuarioEstaEnMyAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "busca informacion de su perfil",
+            "match": {
+              "location": "Testti.buscaInformacionDeSuPerfil()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "el titulo de Adress debe ser \"Default Billing Address\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4016684400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "Validar titulo Default Billing Address",
+        "description": "",
+        "id": "categoria-pagina-magento;validar-titulo-default-billing-address;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1007793500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 87200,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "el usuario esta en MyAccount",
+            "match": {
+              "location": "Testti.elUsuarioEstaEnMyAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25900,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "busca informacion de su perfil",
+            "match": {
+              "location": "Testti.buscaInformacionDeSuPerfil()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 45,
+            "name": "el titulo de DefaultShipping debe ser \"Default Shipping Address\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Categoria Pagina Magento",
+    "description": "como usuario quiero revisar la informacion personal que tengo ingresada en la pagina Magento\r\n\r\nBackground :\r\n  Given  el usuario ingreso a la pagina\r\n  And    hace click en Account\r\n  And    hace click en MyAccount",
+    "id": "categoria-pagina-magento",
+    "keyword": "Feature",
+    "uri": "information.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4328678200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Ingresar a la categoria Smartphone desde la pantalla Home",
+        "description": "",
+        "id": "categoria-pagina-magento;ingresar-a-la-categoria-smartphone-desde-la-pantalla-home",
+        "after": [
+          {
+            "result": {
+              "duration": 1382836300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 146121000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "El usuario se encuentra en la pagina Home de la tienda",
+            "match": {
+              "location": "Testti.el_usuario_se_encuentra_en_la_pagina_Home_de_la_tienda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1443272800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "hace click sobre el boton Mobile",
+            "match": {
+              "location": "Testti.hace_click_sobre_el_boton_Mobile()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 193607900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Se debe redirigir a la pantalla mobile",
+            "match": {
+              "location": "Testti.se_debe_redirigir_a_la_pantalla_de_comics()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Categoria Pagina Magento",
+    "description": "  como usuario quiero realizar compras en la pagina Magento y navegar por la pagina para ver diferentes productos.",
+    "id": "categoria-pagina-magento",
+    "keyword": "Feature",
+    "uri": "test.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3711541900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Ingresar a la categoria TV desde la pantalla Home",
+        "description": "",
+        "id": "categoria-tv;ingresar-a-la-categoria-tv-desde-la-pantalla-home",
+        "after": [
+          {
+            "result": {
+              "duration": 758292400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 39379700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "El usuario se encuentra en la pagina Home de la tienda",
+            "match": {
+              "location": "Testti.el_usuario_se_encuentra_en_la_pagina_Home_de_la_tienda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1029152300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "hace click sobre el boton TV",
+            "match": {
+              "location": "Testti.hace_click_sobre_el_boton_TV()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37447400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Se debe redirigir a la pantalla TV",
+            "match": {
+              "location": "Testti.se_debe_redirigir_a_la_pantalla_TV()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3490839200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Validar precios de los televisores",
+        "description": "",
+        "id": "categoria-tv;validar-precios-de-los-televisores;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 616056600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 49800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "El usuario se encuentra en la pagina de televisores",
+            "match": {
+              "location": "Testti.elUsuarioSeEncuentraEnLaPaginaDeTelevisores()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1122210300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "hace click sobre el boton TV",
+            "match": {
+              "location": "Testti.hace_click_sobre_el_boton_TV()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108834400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Se debe redirigir a la pantalla TV",
+            "match": {
+              "location": "Testti.se_debe_redirigir_a_la_pantalla_TV()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 67338700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "El valor de TV marca Lg debe ser $61500",
+            "match": {
+              "arguments": [
+                {
+                  "val": "61500",
+                  "offset": 34
+                }
+              ],
+              "location": "Testti.elValorDeTVMarcaLgDebeSer$(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63207500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "El valor de la TV marca Samsung debe ser 70000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "70000",
+                  "offset": 41
+                }
+              ],
+              "location": "Testti.elValorDeLaTVMarcaSamsungDebeSer(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3489611000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Validar el titulo de los televisores",
+        "description": "",
+        "id": "categoria-tv;validar-el-titulo-de-los-televisores;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 602324700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 44507400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "El usuario se encuentra en la pagina Home de la tienda",
+            "match": {
+              "location": "Testti.el_usuario_se_encuentra_en_la_pagina_Home_de_la_tienda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1048218400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Hace click sobre el boton TV",
+            "match": {
+              "location": "Testti.haceClickSobreElBotonTV()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53107600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "La primera TV debe tener el siguiente titulo \"LG LCD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LG LCD",
+                  "offset": 46
+                }
+              ],
+              "location": "Testti.laPrimeraTVDebeTenerElSiguienteTitulo(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 91176100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "La segunda TV debe tener el siguiente titulo \"SAMSUNG LCD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SAMSUNG LCD",
+                  "offset": 46
+                }
+              ],
+              "location": "Testti.laSegundaTVDebeTenerElSiguienteTitulo(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Categoria TV",
+    "description": "como usuario quiero navegar en la pestaña de Televisores",
+    "id": "categoria-tv",
+    "keyword": "Feature",
+    "uri": "tv.feature"
+  }
+]

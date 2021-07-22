@@ -2,10 +2,17 @@ package seleniumgluecode;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import pom.CartPage;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 //@ExtendWith(SeleniumExtension.class)
@@ -13,10 +20,17 @@ public class Testti extends TestBase {
 
     //Logger log;
 
+    //private static WebDriver webDriver;
+
     private String PriceTvLG;
     private String PriceTvSamsung;
     private String TitleTv1;
     private String TitleTv2;
+    private String TotalCart;
+    private String MensajeBienvenida;
+    private String NEWSLETTERS;
+    private String DefaultBillingAddress;
+    private String DefaultShippingAddress;
 
 
 
@@ -85,8 +99,6 @@ public class Testti extends TestBase {
         String CurrentPriceTV = tvPage.getTextPriceTVSAMSUNG().replaceAll("\\p{Punct}", "");
 
         assertEquals( PriceTvSamsung, CurrentPriceTV, "Error: no es correcto el precio de la TV marca Samsung'");
-
-
     }
 
     /*
@@ -99,28 +111,148 @@ public class Testti extends TestBase {
 
     @When("^Hace click sobre el boton TV$")
     public void haceClickSobreElBotonTV() throws Throwable {
-
+        tvPage.clickOnTV();
     }
 
     @Then("^La primera TV debe tener el siguiente titulo \"([^\"]*)\"$")
     public void laPrimeraTVDebeTenerElSiguienteTitulo(String TitleTv1) throws Throwable {
+        this.TitleTv1 = TitleTv1;
+        String CurrentTitleTV1 = tvPage.getCurrentTitleTV().replaceAll("\\p{Punct}", "");
 
+        assertEquals( TitleTv1, CurrentTitleTV1, "Error: no es correcto el titulo de la TV LG'");
     }
 
     @Then("^La segunda TV debe tener el siguiente titulo \"([^\"]*)\"$")
     public void laSegundaTVDebeTenerElSiguienteTitulo(String TitleTv2) throws Throwable {
+        this.TitleTv2 = TitleTv2;
+        String CurrentTitleTV2 = tvPage.getCurrentTitleTV2().replaceAll("\\p{Punct}", "");
+
+        assertEquals( TitleTv2, CurrentTitleTV2, "Error: no es correcto el titulo de la TV SAMSUNG'");
+
+    }
+
+
+    /*
+         Validar carrito de compras
+
+
+
+     */
+
+    @Given("^El usuario se encuentra en la pagina de Smartphones$")
+    public void elUsuarioSeEncuentraEnLaPaginaDeSmartphones() throws Throwable {
+
+        cartPage.clickOnMobile();
+
+    }
+
+    @When("^hace click sobre el boton Add To Cart en el celular Sony$")
+    public void haceClickSobreElBotonAddToCartEnElCelularSony() throws Throwable {
+        cartPage.clickAddtoCartSony();
+
+    }
+
+
+    @When("^Hace click sobre el boton Add To Cart en el celular Iphone$")
+    public void haceClickSobreElBotonAddToCartEnElCelularIphone() throws Throwable {
+
+        Thread.sleep(2000);
+        cartPage.clickAddtoCartIphone();
+    }
+
+    @When("^Hace click sobre el boton Add To Cart en el celular Samsung$")
+    public void haceClickSobreElBotonAddToCartEnElCelularSamsung() throws Throwable {
+        cartPage.clickAddtoCartSamsung();
+    }
+
+    @Then("^Se deben agregar los (\\d+) smartphones al carrito de manera correcta$")
+    public void seDebenAgregarLosSmartphonesAlCarritoDeManeraCorrecta(String TotalCart) throws Throwable {
+        this.TotalCart = TotalCart;
+        String CantidadCart = cartPage.getCantidadCart().replaceAll("\\p{Punct}", "");
+
+        assertEquals( TotalCart, CantidadCart, "Error: el total de productos del carrito no es el correcto'");
+
+
+    }
+
+    @Then("^El Carrito no debe estar Vacio$")
+    public void elCarritoNoDebeEstarVacio() throws Throwable {
+        String CantidadCart = cartPage.getCantidadCart().replaceAll("\\p{Punct}", "");
+
+        int CantidadCart2 = Integer.parseInt(CantidadCart);
+        Boolean condicion;
+
+        if(CantidadCart2 >=1){
+            condicion = true;
+        }else{
+            condicion = false;
+        }
+        Assert.assertFalse("error, el carrito esta vacio", condicion.equals(false));
+
+    }
+
+    @Then("^El total a pagar debe ser de \\$(\\d+)\\.(\\d+)$")
+    public void elTotalAPagarDebeSerDe$(int arg1, int arg2) throws Throwable {
+
+    }
+
+    @Then("^El subtotal a pagar debe ser de \\$(\\d+)\\.(\\d+)$")
+    public void elSubtotalAPagarDebeSerDe$(int arg1, int arg2) throws Throwable {
 
     }
 
 
 
+    /*
+          Validar informacion personal
+     */
+
+
+    @Given("^el usuario ingreso a la pagina$")
+    public void elUsuarioIngresoALaPagina() throws Throwable {
+
+    }
+
+    @Given("^hace click en Account$")
+    public void haceClickEnAccount() throws Throwable {
 
 
 
 
 
+    }
+
+    @Given("^hace click en MyAccount$")
+    public void haceClickEnMyAccount() throws Throwable {
 
 
+    }
+
+    @Given("^el usuario esta en MyAccount$")
+    public void elUsuarioEstaEnMyAccount() throws Throwable {
+
+    }
+
+    @When("^busca informacion de su perfil$")
+    public void buscaInformacionDeSuPerfil() throws Throwable {
+
+    }
+
+    @Then("^el mensaje de bienvenida debe ser \"([^\"]*)\"$")
+    public void elMensajeDeBienvenidaDebeSer(String mensajeBienvenida) throws Throwable {
+        this.TotalCart = mensajeBienvenida;
+
+
+
+    }
+
+    @Then("^el titulo de contact debe ser \"([^\"]*)\"$")
+    public void elTituloDeContactDebeSer(String NEWSLETTERS) throws Throwable {
+        this.TotalCart = NEWSLETTERS;
+
+
+
+    }
 
 
 }

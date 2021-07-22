@@ -1,0 +1,22 @@
+{
+  "name": "cucumber_selenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "report": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosuBaeza/CucumberSeleniumBrowseStackOficial.git"
+  },
+  "author": "Josue Baeza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosuBaeza/CucumberSeleniumBrowseStackOficial/issues"
+  },
+  "homepage": "https://github.com/JosuBaeza/CucumberSeleniumBrowseStackOficial#readme",
+  "devDependencies": {
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  }
+}

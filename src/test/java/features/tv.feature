@@ -24,4 +24,4 @@ Feature: Categoria TV
    And   La segunda TV debe tener el siguiente titulo <Titulo2>
    Examples:
      |Titulo1  | Titulo2        |
-     |"LG LCD" |"Samsung LCD"   |
+     |"LG LCD" |"SAMSUNG LCD"   |

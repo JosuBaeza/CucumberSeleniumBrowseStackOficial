@@ -23,13 +23,17 @@ public class Hooks {
 
     private static WebDriver webDriver;
 
-    public static final String AUTOMATE_USERNAME = "israel_aj7zMH";
-    public static final String AUTOMATE_ACCESS_KEY = "WumFXg3pzzEbwmWnNxEf";
-    public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY
-            + "@hub-cloud.browserstack.com/wd/hub";
+/*
+    //Esto lo usamos para poder ejecutar las pruebas en la nube "BrowserStack"
+
+
+    public static final String AUTOMATE_USERNAME = "baezairadij_pxR7I5";
+    public static final String AUTOMATE_ACCESS_KEY = "cbHQosSHgpRRAL6sB7bX";
+    public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
+
 
     @Before
-    public void setUp() throws MalformedURLException {
+    public void setUpp() throws MalformedURLException {
         System.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
@@ -41,9 +45,9 @@ public class Hooks {
         caps.setCapability("os_version", "10");
         caps.setCapability("browser", "Chrome");
         caps.setCapability("browser_version", "89.0");
-        caps.setCapability("project", "josuejosuejosue");
-        caps.setCapability("build", "josuejosuejosue");
-        caps.setCapability("name", "josuejosuejosue");
+        caps.setCapability("project", "EjemploDeEjecucionTBK");
+        caps.setCapability("build", "Release10.0");
+        caps.setCapability("name", "PruebasBrowserStack");
         caps.setCapability("browserstack.local", "false");
         caps.setCapability("browserstack.selenium_version", "3.14.0");
 
@@ -51,20 +55,18 @@ public class Hooks {
 
         webDriver.get("http://live.demoguru99.com/index.php/");
 
-    }
 
-    /*
+    }
+*/
         @Before
         public void setUp(){
             System.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver/chromedriver.exe");
-            webDriver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless");
+            webDriver  = new ChromeDriver(options);
             webDriver.get("http://live.demoguru99.com/index.php/");
             webDriver.manage().window().maximize();
         }
-  */
-
-
-
 
         @After
         public void tearDown(){
