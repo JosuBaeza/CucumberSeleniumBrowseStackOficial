@@ -61,9 +61,12 @@ public class Hooks {
         @Before
         public void setUp(){
             System.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver/chromedriver.exe");
+
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");
+
             webDriver  = new ChromeDriver(options);
+
             webDriver.get("http://live.demoguru99.com/index.php/");
             webDriver.manage().window().maximize();
         }
